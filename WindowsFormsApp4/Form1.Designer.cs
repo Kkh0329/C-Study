@@ -64,6 +64,7 @@
             this.id.Size = new System.Drawing.Size(214, 25);
             this.id.TabIndex = 2;
             this.id.Text = "아이디";
+            this.id.TextChanged += new System.EventHandler(this.id_TextChanged);
             // 
             // password
             // 

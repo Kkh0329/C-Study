@@ -78,5 +78,10 @@ namespace WindowsFormsApp4
             Form4 showForm4 = new Form4();
             showForm4.ShowDialog();
         }
+
+        private void id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

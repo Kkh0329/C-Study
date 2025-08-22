@@ -84,6 +84,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "2025년 8월 유가 공지";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
