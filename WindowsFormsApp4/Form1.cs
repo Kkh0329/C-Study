@@ -27,7 +27,7 @@ namespace WindowsFormsApp4
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        { 
             // 로그인 버튼
             // 클릭 시 로그인
             /*

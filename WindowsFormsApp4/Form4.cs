@@ -25,7 +25,7 @@ namespace WindowsFormsApp4
 
         private void id_TextChanged(object sender, EventArgs e)
         {
-
+             
         }
 
         private void password_TextChanged(object sender, EventArgs e)
