@@ -40,7 +40,7 @@ namespace WindowsFormsApp4
             string userId = id.Text;
             string userPassword = password.Text;
 
-            // 아이디와 비밀번호가 모두 입력됐는지 확인
+            // 아이디와 비밀번호가 모두 입력됐는지 확인 
             if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(userPassword))
             {
                 MessageBox.Show("아이디와 비밀번호를 모두 입력해주세요.", "알림");
