@@ -25,7 +25,7 @@ namespace WindowsFormsApp4
 
         private void id_TextChanged(object sender, EventArgs e)
         {
-             
+
         }
 
         private void password_TextChanged(object sender, EventArgs e)
@@ -44,6 +44,13 @@ namespace WindowsFormsApp4
             if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(userPassword))
             {
                 MessageBox.Show("아이디와 비밀번호를 모두 입력해주세요.", "알림");
+                return;
+            }
+
+            // 비밀번호 복잡도 검사
+            if (!IsValidPassword(userPassword))
+            {
+                MessageBox.Show("비밀번호는 최소 8자 이상이어야 하며, 대문자, 소문자, 숫자, 특수문자를 포함해야 합니다.", "알림");
                 return;
             }
 
@@ -101,6 +108,25 @@ namespace WindowsFormsApp4
                 }
             }
 
+        }
+
+
+    private bool IsValidPassword(string password)
+        // 비밀번호 생성 제약
+        {
+            // 비밀번호의 최소 길이
+            if (password.Length < 8)
+            {
+                return false;
+            }
+
+            // 대문자, 소문자, 숫자, 특수문자가 모두 포함되어 있는지 검사
+            bool hasUpperChar = password.Any(c => Char.IsUpper(c));
+            bool hasLowerChar = password.Any(c => Char.IsLower(c));
+            bool hasNumericChar = password.Any(c => Char.IsDigit(c));
+            bool hasSpecialChar = password.Any(c => "!@#$%^&*()_+-=[]{}|;:,.<>?".Contains(c));
+
+            return hasUpperChar && hasLowerChar && hasNumericChar && hasSpecialChar;
         }
     }
 }
