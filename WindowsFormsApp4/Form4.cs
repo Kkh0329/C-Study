@@ -53,6 +53,23 @@ namespace WindowsFormsApp4
                 {
                     connection.Open();
 
+                    // 아이디 중복 확인
+                    string checkUserQuery = "SELECT COUNT(*) FROM users WHERE username = @userId";
+                    using (SqlCommand checkCommand = new SqlCommand(checkUserQuery, connection))
+                    {
+                        checkCommand.Parameters.AddWithValue("@userId", userId);
+
+                        int userExists = (int)checkCommand.ExecuteScalar();
+
+                        if (userExists > 0)
+                        {
+                            // 아이디가 이미 존재하는 경우
+                            MessageBox.Show("이미 사용 중인 아이디입니다. 다른 아이디를 입력해주세요.", "알림");
+                            return;
+                        }
+                    }
+
+
                     string signUpQuery = "INSERT INTO users(username, password, created_at) VALUES(@userId, @userPassword, GETDATE())";
 
                     using (SqlCommand command = new SqlCommand(signUpQuery, connection))
