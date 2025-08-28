@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form2 : Form
+    public partial class MainPage : Form
     {
-        public Form2()
+        public MainPage()
         {
             InitializeComponent();
         }
@@ -25,8 +25,8 @@ namespace WindowsFormsApp4
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form3 showForm3 = new Form3();
-            showForm3.ShowDialog();
+            PostPage showPostPage = new PostPage();
+            showPostPage.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

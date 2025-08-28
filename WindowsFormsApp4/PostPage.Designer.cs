@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp4
 {
-    partial class Form3
+    partial class PostPage
     {
         /// <summary>
         /// Required designer variable.
@@ -61,8 +61,9 @@
             this.label3.Size = new System.Drawing.Size(125, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "~~~~내용~~~~";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Form3
+            // PostPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +71,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form3";
+            this.Name = "PostPage";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);

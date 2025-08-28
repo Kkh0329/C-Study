@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form3 : Form
+    public partial class PostPage : Form
     {
-        public Form3()
+        public PostPage()
         {
             InitializeComponent();
         }
@@ -25,6 +25,11 @@ namespace WindowsFormsApp4
         private void label1_Click(object sender, EventArgs e)
         {
              
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

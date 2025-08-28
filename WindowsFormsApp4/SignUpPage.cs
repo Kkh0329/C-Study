@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form4 : Form
+    public partial class SignUpPage : Form
     {
-        public Form4()
+        public SignUpPage()
         {
             InitializeComponent();
         }
@@ -54,6 +55,9 @@ namespace WindowsFormsApp4
                 return;
             }
 
+            // 비밀번호 암호화
+            string hashedPassword = passwordSHA256.HashPassword(userPassword);
+
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -92,8 +96,8 @@ namespace WindowsFormsApp4
                             MessageBox.Show("회원가입 성공", "알림");
 
                             this.Visible = false;
-                            Form1 showForm1 = new Form1();
-                            showForm1.ShowDialog();
+                            LoginPage showLoginPage = new LoginPage();
+                            showLoginPage.ShowDialog();
                         }
                         else
                         {
@@ -111,7 +115,7 @@ namespace WindowsFormsApp4
         }
 
 
-    private bool IsValidPassword(string password)
+        private bool IsValidPassword(string password)
         // 비밀번호 생성 제약
         {
             // 비밀번호의 최소 길이
@@ -128,5 +132,24 @@ namespace WindowsFormsApp4
 
             return hasUpperChar && hasLowerChar && hasNumericChar && hasSpecialChar;
         }
+
+        public class passwordSHA256{
+            // 비밀번호 암호화
+            public static string HashPassword(string password)
+            {
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    // 비밀번호를 바이트 배열로 변환
+                    byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
+
+                    // SHA256 해시 생성
+                    byte[] hashBytes = sha256.ComputeHash(passwordBytes);
+
+                    // 바이트 배열을 16진수 문자열로 변환하여 반환
+                    return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+                }
+            }
+}
     }
+
 }
