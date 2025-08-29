@@ -65,7 +65,7 @@ namespace WindowsFormsApp4
                     connection.Open();
 
                     // 아이디 중복 확인
-                    string checkUserQuery = "SELECT COUNT(*) FROM users WHERE username = @userId";
+                    string checkUserQuery = "SELECT COUNT(*) FROM users WHERE email = @userId";
                     using (SqlCommand checkCommand = new SqlCommand(checkUserQuery, connection))
                     {
                         checkCommand.Parameters.AddWithValue("@userId", userId);
@@ -81,12 +81,12 @@ namespace WindowsFormsApp4
                     }
 
 
-                    string signUpQuery = "INSERT INTO users(username, password, created_at) VALUES(@userId, @userPassword, GETDATE())";
+                    string signUpQuery = "INSERT INTO users(email, password, created_at) VALUES(@userId, @userPassword, GETDATE())";
 
                     using (SqlCommand command = new SqlCommand(signUpQuery, connection))
                     {
                         command.Parameters.AddWithValue("@userId", userId);
-                        command.Parameters.AddWithValue("@userPassword", userPassword);
+                        command.Parameters.AddWithValue("@userPassword", hashedPassword);
 
                         int effectnum;
                         effectnum = command.ExecuteNonQuery();
@@ -150,6 +150,11 @@ namespace WindowsFormsApp4
                 }
             }
 }
+
+        private void SignUpPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

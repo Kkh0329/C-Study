@@ -58,6 +58,12 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerPage.Designer.cs">
+      <DependentUpon>ManagerPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="PostPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerPage.resx">
+      <DependentUpon>ManagerPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PostPage.resx">
       <DependentUpon>PostPage.cs</DependentUpon>
@@ -112,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\art_16520791486777_910b611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\다운로드.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\화면 캡처 2025-08-29 134733.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

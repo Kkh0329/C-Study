@@ -37,7 +37,7 @@ namespace WindowsFormsApp4
                 try
                 {
                     connection.Open();
-                    string checkUserQuery = "SELECT COUNT(1) FROM users WHERE username = @userId AND password = @userPassword";
+                    string checkUserQuery = "SELECT COUNT(1) FROM users WHERE email = @userId AND password = @userPassword";
                     using (SqlCommand checkcommand = new SqlCommand(checkUserQuery, connection))
                     {
                         checkcommand.Parameters.AddWithValue("@userId", userId);

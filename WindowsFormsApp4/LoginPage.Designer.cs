@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(244, 433);
+            this.button1.Location = new System.Drawing.Point(617, 480);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 46);
             this.button1.TabIndex = 1;
@@ -60,16 +60,16 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(201, 281);
+            this.id.Location = new System.Drawing.Point(574, 328);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(214, 25);
             this.id.TabIndex = 2;
-            this.id.Text = "아이디";
+            this.id.Text = "아이디@hyungkuk.com";
             this.id.TextChanged += new System.EventHandler(this.id_TextChanged);
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(201, 341);
+            this.password.Location = new System.Drawing.Point(574, 388);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(214, 25);
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(476, 573);
+            this.button2.Location = new System.Drawing.Point(1172, 696);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 23);
             this.button2.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(244, 500);
+            this.button3.Location = new System.Drawing.Point(617, 547);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 46);
             this.button3.TabIndex = 5;
@@ -99,9 +99,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp4.Properties.Resources.art_16520791486777_910b611;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(526, 106);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(310, 184);
+            this.pictureBox1.Size = new System.Drawing.Size(308, 181);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -110,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 633);
+            this.ClientSize = new System.Drawing.Size(1332, 853);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
