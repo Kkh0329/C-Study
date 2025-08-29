@@ -28,134 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Menu1 = new System.Windows.Forms.Button();
-            this.Menu2 = new System.Windows.Forms.Button();
-            this.Menu3 = new System.Windows.Forms.Button();
-            this.Menu4 = new System.Windows.Forms.Button();
-            this.Menu5 = new System.Windows.Forms.Button();
-            this.Menu6 = new System.Windows.Forms.Button();
-            this.Menu7 = new System.Windows.Forms.Button();
             this.managerPageButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("휴먼둥근헤드라인", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(23, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "게시판";
-            // 
-            // Menu1
-            // 
-            this.Menu1.Location = new System.Drawing.Point(27, 82);
-            this.Menu1.Name = "Menu1";
-            this.Menu1.Size = new System.Drawing.Size(565, 52);
-            this.Menu1.TabIndex = 1;
-            this.Menu1.Text = "그룹웨어 인사총무팀 수신 각종양식 제목 작성기준";
-            this.Menu1.UseVisualStyleBackColor = true;
-            this.Menu1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Menu2
-            // 
-            this.Menu2.Location = new System.Drawing.Point(27, 157);
-            this.Menu2.Name = "Menu2";
-            this.Menu2.Size = new System.Drawing.Size(565, 52);
-            this.Menu2.TabIndex = 2;
-            this.Menu2.Text = "임직원 법인카드 운영 공지";
-            this.Menu2.UseVisualStyleBackColor = true;
-            // 
-            // Menu3
-            // 
-            this.Menu3.Location = new System.Drawing.Point(27, 233);
-            this.Menu3.Name = "Menu3";
-            this.Menu3.Size = new System.Drawing.Size(565, 52);
-            this.Menu3.TabIndex = 3;
-            this.Menu3.Text = "25년 6월 결산 마감 공지";
-            this.Menu3.UseVisualStyleBackColor = true;
-            this.Menu3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Menu4
-            // 
-            this.Menu4.Location = new System.Drawing.Point(27, 308);
-            this.Menu4.Name = "Menu4";
-            this.Menu4.Size = new System.Drawing.Size(565, 52);
-            this.Menu4.TabIndex = 4;
-            this.Menu4.Text = "2025년 8월 유가 공지";
-            this.Menu4.UseVisualStyleBackColor = true;
-            this.Menu4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // Menu5
-            // 
-            this.Menu5.Location = new System.Drawing.Point(27, 384);
-            this.Menu5.Name = "Menu5";
-            this.Menu5.Size = new System.Drawing.Size(565, 52);
-            this.Menu5.TabIndex = 5;
-            this.Menu5.Text = "흥국에프엔비 드레스코드 (사내복장기준)";
-            this.Menu5.UseVisualStyleBackColor = true;
-            this.Menu5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // Menu6
-            // 
-            this.Menu6.Location = new System.Drawing.Point(27, 462);
-            this.Menu6.Name = "Menu6";
-            this.Menu6.Size = new System.Drawing.Size(565, 52);
-            this.Menu6.TabIndex = 6;
-            this.Menu6.Text = "윤리규정 준수의";
-            this.Menu6.UseVisualStyleBackColor = true;
-            // 
-            // Menu7
-            // 
-            this.Menu7.Location = new System.Drawing.Point(28, 542);
-            this.Menu7.Name = "Menu7";
-            this.Menu7.Size = new System.Drawing.Size(565, 52);
-            this.Menu7.TabIndex = 7;
-            this.Menu7.Text = "ChatGPT 결제 시 부가가치세(VAT) 관련 안내";
-            this.Menu7.UseVisualStyleBackColor = true;
             // 
             // managerPageButton
             // 
-            this.managerPageButton.Location = new System.Drawing.Point(503, 20);
+            this.managerPageButton.Location = new System.Drawing.Point(1149, 54);
             this.managerPageButton.Name = "managerPageButton";
-            this.managerPageButton.Size = new System.Drawing.Size(117, 23);
+            this.managerPageButton.Size = new System.Drawing.Size(145, 31);
             this.managerPageButton.TabIndex = 8;
             this.managerPageButton.Text = "관리자페이지";
             this.managerPageButton.UseVisualStyleBackColor = true;
+            this.managerPageButton.Click += new System.EventHandler(this.managerPageButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 112);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(357, 333);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox2.Image = global::WindowsFormsApp4.Properties.Resources.화면_캡처_2025_08_29_134733;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(130, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 473);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(357, 339);
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox4.Location = new System.Drawing.Point(388, 112);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(500, 700);
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox5.Location = new System.Drawing.Point(907, 112);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(412, 333);
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox6.Location = new System.Drawing.Point(907, 467);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(412, 345);
+            this.pictureBox6.TabIndex = 15;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(178, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 70);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "전자우편";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Location = new System.Drawing.Point(367, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(164, 70);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "게시판";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.Location = new System.Drawing.Point(557, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(164, 70);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "조직관리";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button4.Location = new System.Drawing.Point(748, 15);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(164, 70);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "문서관리";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button5.Location = new System.Drawing.Point(943, 15);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(164, 70);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "근태관리";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(100, 154);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(169, 162);
+            this.pictureBox7.TabIndex = 21;
+            this.pictureBox7.TabStop = false;
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 633);
+            this.ClientSize = new System.Drawing.Size(1336, 864);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.managerPageButton);
-            this.Controls.Add(this.Menu7);
-            this.Controls.Add(this.Menu6);
-            this.Controls.Add(this.Menu5);
-            this.Controls.Add(this.Menu4);
-            this.Controls.Add(this.Menu3);
-            this.Controls.Add(this.Menu2);
-            this.Controls.Add(this.Menu1);
-            this.Controls.Add(this.label1);
             this.Name = "MainPage";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.MainPage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Menu1;
-        private System.Windows.Forms.Button Menu2;
-        private System.Windows.Forms.Button Menu3;
-        private System.Windows.Forms.Button Menu4;
-        private System.Windows.Forms.Button Menu5;
-        private System.Windows.Forms.Button Menu6;
-        private System.Windows.Forms.Button Menu7;
         private System.Windows.Forms.Button managerPageButton;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

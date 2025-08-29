@@ -36,18 +36,18 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(207, 217);
+            this.id.Location = new System.Drawing.Point(549, 293);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(214, 25);
             this.id.TabIndex = 3;
-            this.id.Text = "아이디";
+            this.id.Text = "아이디@hyungkuk.com";
             this.id.TextChanged += new System.EventHandler(this.id_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("휴먼둥근헤드라인", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(215, 80);
+            this.label1.Location = new System.Drawing.Point(557, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 45);
             this.label1.TabIndex = 5;
@@ -56,7 +56,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(255, 344);
+            this.button1.Location = new System.Drawing.Point(597, 420);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 46);
             this.button1.TabIndex = 6;
@@ -66,24 +66,26 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(207, 261);
+            this.password.Location = new System.Drawing.Point(549, 337);
             this.password.Name = "password";
+            this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(214, 25);
             this.password.TabIndex = 7;
             this.password.Text = "비밀번호";
             this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
-            // Form4
+            // SignUpPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 633);
+            this.ClientSize = new System.Drawing.Size(1065, 682);
             this.Controls.Add(this.password);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.id);
-            this.Name = "Form4";
+            this.Name = "SignUpPage";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.SignUpPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

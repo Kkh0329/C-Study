@@ -12,3 +12,4 @@ C:\Users\user\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFo
 C:\Users\user\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
 C:\Users\user\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PostPage.resources
 C:\Users\user\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.SignUpPage.resources
+C:\Users\user\source\repos\WindowsFormsApp4\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ManagerPage.resources

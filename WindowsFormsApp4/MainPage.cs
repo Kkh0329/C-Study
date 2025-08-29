@@ -31,12 +31,24 @@ namespace WindowsFormsApp4
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Visible=false;
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
              
+        }
+
+        private void managerPageButton_Click(object sender, EventArgs e)
+        {
+            ManagerPage showManagerPage = new ManagerPage();
+            showManagerPage.ShowDialog();
+        }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
